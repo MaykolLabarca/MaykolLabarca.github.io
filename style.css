@@ -1,0 +1,268 @@
+*{
+    font-family: Poppins, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+/* Colores y fuentes */
+:root{
+    --color-azul: #114fb4;
+    --color-texto: #011627;
+    --color-fondo: #FFFFFF;
+    --color-primario: #0466c8;
+    --color-secundario: #d5d9d3;
+    --fuente-grande: 4.1rem;
+    --fuente-p: 1rem;
+
+
+}
+/* Fondo de pagina */
+body{
+    box-sizing: border-box;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    min-height: 100vh;
+    font-family: sans-serif;
+   
+    
+
+
+}
+/* Poscicion del encabezaso */
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all ease .55s;
+    padding: 20px 9%;
+    background: var(--color-fondo);
+    box-shadow: 0 4px 80px rgb(0,0,0.7);
+}
+/* Poscicion del logo */
+.logo{
+    display: flex;
+    align-items: center;
+    color: var(--color-texto);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo i{
+    vertical-align: middle;
+    color: var(--color-primario);
+    font-size: 27px;
+    margin-right: 5px;
+
+}
+
+.navegacion{
+    width: 600px;
+    font-size: 17px;
+    font-weight: 540;
+    background: var(--color-fondo);
+    
+
+
+}
+
+.navegacion ul{
+    list-style: none;
+
+}
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+    
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px;
+    color: var(--color-texto);
+    text-decoration: none;
+}    
+
+.menu li a:hover{
+    color: var(--color-fondo);
+    background: var(--color-azul);
+    transition: all .3s ease;
+    border-radius: 5px;
+    border: 1px solid var(--color-secundario);
+    text-decoration: none;
+    
+
+}
+
+/* submenu */
+
+.submenu1{
+    position: absolute;
+    background: var(--color-azul);
+    border-radius: 5px;
+    width: 110%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+
+}
+
+
+
+.submenu1 li a{
+    display: block;
+    padding: 15px;
+    color: var(--color-fondo);
+    text-decoration: none;
+
+
+}
+
+.submenu1 li a:hover{
+
+    transition: all ease .2s;
+    background: var(--color-azul);
+    font-size: 20px;
+    width: 130%;
+    color: var(--color-fondo);
+    border: 2px solid var(--color-secundario);
+}
+
+
+.menu li:hover .submenu1{
+
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+
+
+.container{
+    max-width: 1903px;
+    margin: 0 10px ;
+
+}
+
+.footer{
+    background-color: var(--color-fondo);
+    padding:60px 0;
+
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+    color: var(--color-azul);
+
+}
+.footer-lik h4{
+    font-size: 20px;
+    color: var(--color-azul);
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid var(--color-azul);
+    padding-bottom: 10px;
+    display: inline-block;
+
+}
+
+.footer-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--color-texto);
+    display: block;
+    margin-bottom: 15px;
+    transition: all.3s ease;
+}
+
+.footer-links ul li a:hover{
+    color: var(--color-primario);
+    padding-left: 6px;
+
+}
+
+.logoabajo{
+    width: 25%;
+    
+    
+    
+    
+ 
+}
+
+.video-1{
+    position: relative;
+    width: 100%;
+    display: block;
+
+}
+
+
+
+.slider-box{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.slider-box ul{
+    display:  flex;
+    padding: 0;
+    width: 100%;
+}
+
+.textoslider{
+    position: absolute;
+    text-align: left;
+    padding: 0 20px;
+    top: 400px;
+    left: 55%;
+    color: var(--color-fondo);
+    background: var(--color-azul);
+    border-radius: 5px;
+    padding: 60px;
+    box-shadow: 0 20px 20px rgb(0,0,0.7);
+
+
+}
+
+.textoslider h1{
+    font-size: 45px;
+    margin-bottom: 35px;
+
+
+}
+
+.textoslider2{
+    position: absolute;
+    text-align: left;
+    top: 1500px;
+    right: 70%;
+    color: var(--color-fondo);
+    background: var(--color-azul);
+    border-radius: 5px;
+    padding: 60px 100px;
+    box-shadow: 0 20px 20px rgb(0,0,0.7);
+
+}
+
+.textoslider2 h1{
+    font-size: 45px;
+    margin-bottom: 35px;
+
+
+}
